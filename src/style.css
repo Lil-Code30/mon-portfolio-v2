@@ -1,1 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Geist:wght@100..900&family=Press+Start+2P&display=swap');
+
 @import "tailwindcss";
+
+/* :root{
+    *,*::after,*::before{
+        @apply border-1 border-green-400;
+    }
+} */
+@theme{
+    
+    --color-primary: #121212; /* #222222*/
+    --color-secondary: #7b7b7b;
+    --color-tertiary: oklch(54.6% 0.245 262.881);
+    --color-primary-bg: #f8f8f8; /* #f7f6f0*/
+
+    --font-geist: "Geist", sans-serif;
+    --font-funnel-sans: "Funnel Sans", sans-serif;
+    --font-start-2p: "Press Start 2P", system-ui, sans-serif;
+
+    --shadow-test: 35px 35px 0px -15px blue;
+}
+@layer base{
+    body{
+        @apply bg-primary-bg px-2 text-primary;
+    
+    }
+    h2{
+        @apply border-2 border-b-5 border-r-5 w-full  px-1.5 py-0.5 my-2 rounded text-3xl font-funnel-sans font-bold text-center;
+    }
+    h3{
+        @apply text-2xl font-bold;
+    }
+}
+@layer components{
+    .nav-list{
+        @apply w-full md:w-fit text-center md:px-1.5 rounded hover:border hover:border-b-5 hover:border-r-5 transition duration-500 ease-in;
+    }
+    .nav-link{
+        @apply text-2xl md:text-lg font-funnel-sans font-semibold;
+    }
+    .header-social-link{
+        @apply  shadow-test bg-primary text-white  font-funnel-sans font-medium px-1.5 rounded hover:border-2 hover:border-primary hover:text-primary hover:bg-transparent transition duration-400 ease-in;
+    }
+    .education-box{
+        @apply flex gap-x-3 md:gap-x-1 justify-between items-center mb-2 lg:w-2/3 mx-auto;
+    }
+    .education-content h3{
+        @apply text-lg md:text-2xl;
+    } 
+    .education-content p{
+        @apply text-sm font-medium text-gray-600
+    }
+    .education-year{
+        @apply self-start;
+    }
+    .education-year span{
+        @apply font-bold text-[12px] sm:text-lg md:font-extrabold md:text-3xl;
+    }
+    .education-year h1{
+        @apply font-bold md:font-extrabold md:text-2xl;
+    }
+    .skills-box{
+        @apply px-1 py-0.5 text-center border-1 rounded-lg font-funnel-sans font-medium hover:bg-gray-400/50 ;
+    }
+    .project-box{
+        @apply border-2 border-b-6 border-r-6 rounded-lg pb-3 h-fit ;
+    }
+    .project-box img{
+        @apply rounded-t-lg;
+    }
+    .project-title{
+        @apply flex  justify-between px-2;
+    }
+    .project-title span:last-of-type{
+        @apply flex gap-1 items-center;
+    }
+    .project-stacks-container{
+        @apply px-2 flex gap-x-1 flex-wrap my-1.5 items-center;
+    }
+    .project-stack{
+        @apply flex text-sm gap-x-0.5 font-funnel-sans px-1 border-1 rounded font-semibold;
+    }
+    .js-box{
+        @apply border-amber-600/80 bg-yellow-200/50 text-amber-600/80;
+    }
+    .html-box{
+        @apply border-orange-600 bg-orange-100 text-orange-600
+    }
+    .css-box{
+        @apply border-blue-600 bg-blue-200/50 text-blue-600;
+    }
+    .localstorage-box, .api-box{
+        @apply border-gray-600 bg-gray-200 text-gray-800;
+    }
+    .project-description{
+        @apply px-2 font-medium;
+    }
+}

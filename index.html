@@ -8,7 +8,723 @@
     <title>Ismael Loko</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header
+      class="relative py-2 mb-3 flex items-center justify-between md:justify-around lg:justify-between"
+    >
+      <h1 class="font-start-2p md:text-2xl font-extrabold">
+        <span>&lt;</span>LI<span>&gt;</span>
+      </h1>
+      <div>
+        <div class="border-1 border-b-5 border-r-5 peer md:hidden rounded">
+          <label for="menu" class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <input class="hidden" type="checkbox" name="menu" id="menu" />
+          </label>
+        </div>
+        <nav
+          class="main-nav absolute w-full md:size-full border-1 md:border-0 rounded bg-primary-bg md:bg-transparent right-0 md:relative peer-has-checked:block hidden md:block"
+        >
+          <ul
+            class="flex flex-col md:flex-row items-center md:justify-around md:gap-x-2.5 gap-y-3 p-1.5 md:p-0"
+          >
+            <li class="nav-list">
+              <a class="nav-link" href="#about">About me</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-socials hidden md:flex gap-x-2">
+        <a
+          class="header-social-link"
+          href="https://www.linkedin.com/in/loko-ismael/"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+        <a
+          class="header-social-link"
+          href="https://github.com/Lil-Code30"
+          target="_blank"
+        >
+          GitHub
+        </a>
+      </div>
+    </header>
+    <main class="md:w-[80%] lg:w-[60%] md:mx-auto font-geist">
+      <section
+        class="home-section mb-3 flex gap-x-2 flex-col md:flex-row h-1/2 md:h-[50vh]"
+      >
+        <div class="home-infos md:w-full lg:w-1/2 h-fit">
+          <p class="text-lg font-medium md:text-2xl p-1">
+            Hi, I'm
+            <span class="bg-tertiary px-0.5 text-white">Loko Ismael</span>
+          </p>
+          <h1 class="font-bold flex flex-col">
+            <span class="text-5xl">Aspiring</span>
+            <span class="text-7xl md:text-6xl lg:text-7xl">Full Stack</span>
+            <span class="text-5xl lg:text-6xl">Developer</span>
+          </h1>
+          <p class="font-medium text-gray-700">
+            Let's build something amazing together
+          </p>
+          <a
+            class="flex gap-1 my-1.5 items-center border border-green-500 bg-green-200/50 rounded-full size-fit px-1.5"
+            href="mailto:lokoismael9@gmail.com"
+            title="Send me an offer"
+          >
+            <div class="size-2 rounded-full bg-green-500"></div>
+            <div class="text-green-500 font-semibold">Available for Work</div>
+          </a>
+        </div>
+        <div
+          class="home-img container size-fit self-center sm:self-end-safe py-2"
+        >
+          <img
+            class="border-2 lg:max-w-2/3 rounded-md border-b-10 border-r-10"
+            src="https://fakeimg.pl/500x500"
+            alt="to be added later on"
+          />
+          <p class="hidden md:block font-funnel-sans mt-1.5">Student @UQAR</p>
+        </div>
+      </section>
+      <section id="about flex gap-x-2 justify-center flex-col mb-3">
+        <h2>About Me</h2>
+        <p class="font-medium text-gray-700 mb-1.5 text-lg text-center">
+          I Learn, Build and Share my coding journey online
+        </p>
+        <div class="flex flex-col justify-around md:flex-row mb-5">
+          <img
+            class="rounded-full max-w-1/2 self-center shadow-lg"
+            src="https://fakeimg.pl/300x300"
+            alt="to be added later"
+          />
+          <div class="md:w-1/2 text-lg font-medium">
+            <p class="my-2">
+              I'm Loko Ismael, a self-taught web development enthusiast
+              currently diving deep into the world of
+              <span class="text-white bg-red-400 px-1">front-end</span> and
+              <span class="text-white bg-blue-400 px-1">back-end</span>
+              technologies.
+            </p>
+            <p>
+              I’m passionate about
+              <span class="underline decoration-2 decoration-blue-400">
+                clean code
+              </span>
+              ,
+              <span class="underline decoration-2 decoration-blue-400">
+                problem-solving
+              </span>
+              , and
+              <span class="underline decoration-2 decoration-blue-400">
+                continuous learning
+              </span>
+              . Right now, I’m focused on mastering
+              <span
+                class="underline decoration-2 decoration-wavy decoration-blue-400"
+              >
+                React
+              </span>
+              , building real-world projects, and sharing everything I learn to
+              help others grow too.
+            </p>
+          </div>
+        </div>
+        <h3
+          class="underline decoration-2 decoration-wavy mb-3 text-4xl decoration-blue-600 text-center"
+        >
+          Education
+        </h3>
+        <div class="education-box">
+          <div class="education-content">
+            <h3>Bachelor’s Degree in Computer Science</h3>
+            <p>Université du Québec à Rimouski | Lévis Campus, QC, Canada</p>
+          </div>
+          <div class="education-year">
+            <h1><span>2025</span> - <span>Now</span></h1>
+          </div>
+        </div>
+        <div class="education-box">
+          <div class="education-content">
+            <h3>Diploma of Vocational Studies (DVS) in IT Support</h3>
+            <p>CFP Marie-Rollet | Quebec City, QC, Canada</p>
+          </div>
+          <div class="education-year">
+            <h1><span>2023</span> - <span>2024</span></h1>
+          </div>
+        </div>
+        <div class="education-box">
+          <div class="education-content">
+            <h3>High School Diploma</h3>
+            <p>G.B.H.S. Etoug-Ebe | Yaoundé, Cameroon</p>
+          </div>
+          <div class="education-year">
+            <h1><span>2013</span> - <span>2020</span></h1>
+          </div>
+        </div>
+        <h3
+          class="underline decoration-2 decoration-wavy mb-3 text-2xl decoration-blue-600 text-center"
+        >
+          Skills
+        </h3>
+        <div class="flex items-center justify-center flex-wrap gap-1.5 mb-3">
+          <span class="skills-box">Frontend Development</span>
+          <span class="skills-box">Web Development</span>
+          <span class="skills-box">Version Control</span>
+          <span class="skills-box">Responsive Design</span>
+          <span class="skills-box">Web and mobile Design</span>
+        </div>
+        <h3
+          class="underline decoration-2 decoration-wavy mb-3 text-2xl decoration-blue-600 text-center"
+        >
+          Tech Stack
+        </h3>
+        <p align="center">
+          <a href="https://skillicons.dev">
+            <img src="https://skillicons.dev/icons?i=html,css,js,tailwind" />
+          </a>
+        </p>
+        <h3
+          class="underline decoration-2 decoration-wavy my-3 text-2xl decoration-blue-600 text-center"
+        >
+          Tools
+        </h3>
+        <p align="center">
+          <a href="https://skillicons.dev">
+            <img
+              src="https://skillicons.dev/icons?i=vscode,vite,postman,npm,git,github,figma"
+            />
+          </a>
+        </p>
+        <h3
+          class="underline decoration-2 decoration-wavy mb-3 text-4xl decoration-blue-600 text-center"
+        >
+          Work Experience
+        </h3>
+        <p class="text-center font-extrabold text-lg text-gray-500">
+          Coming soon...
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 gap-x-4 mt-3">
+          <div class="grid grid-cols-1 gap-2">
+            <div>
+              <p class="font-medium text-gray-700 mb-1.5 text-lg text-left">
+                Here's some of my projects that i have worked on
+              </p>
+              <a
+                class="flex items-center gap-1 font-funnel-sans font-lg font-semibold text-blue-600"
+                href="https://github.com/Lil-Code30?tab=repositories"
+                target="_blank"
+              >
+                <span>Explore more </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M15.75 2.25H21a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-1.5 0V4.81L8.03 17.03a.75.75 0 0 1-1.06-1.06L19.19 3.75h-3.44a.75.75 0 0 1 0-1.5Zm-10.5 4.5a1.5 1.5 0 0 0-1.5 1.5v10.5a1.5 1.5 0 0 0 1.5 1.5h10.5a1.5 1.5 0 0 0 1.5-1.5V10.5a.75.75 0 0 1 1.5 0v8.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V8.25a3 3 0 0 1 3-3h8.25a.75.75 0 0 1 0 1.5H5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="project-box">
+              <img
+                class="project-img"
+                src="assets/weather-app-img.png"
+                alt="weather app image demonstration with the information of London weather"
+              />
+              <h3 class="project-title">
+                <span>Weather App</span>
+                <span>
+                  <a
+                    class="project-demo-link"
+                    title="project live demo"
+                    href="https://lil-code30.github.io/weather_app/"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    class="project-code-link"
+                    href="https://github.com/Lil-Code30/weather_app"
+                    title="project code here"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M14.447 3.026a.75.75 0 0 1 .527.921l-4.5 16.5a.75.75 0 0 1-1.448-.394l4.5-16.5a.75.75 0 0 1 .921-.527ZM16.72 6.22a.75.75 0 0 1 1.06 0l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 0 1 0-1.06Zm-9.44 0a.75.75 0 0 1 0 1.06L2.56 12l4.72 4.72a.75.75 0 0 1-1.06 1.06L.97 12.53a.75.75 0 0 1 0-1.06l5.25-5.25a.75.75 0 0 1 1.06 0Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </span>
+              </h3>
+              <div class="project-stacks-container">
+                <div class="project-stack js-box">
+                  <img
+                    src="assets/icons/icons8-javascript-20.png"
+                    alt="javascript icon"
+                  />
+                  <span>Javascript</span>
+                </div>
+                <div class="project-stack html-box">
+                  <img
+                    src="assets/icons/icons8-html-5-20.png"
+                    alt="HTML 5 icon"
+                  />
+                  <span>HTML5</span>
+                </div>
+                <div class="project-stack css-box">
+                  <img src="assets/icons/icons8-css-20.png" alt="CSS icon" />
+                  <span>CSS</span>
+                </div>
+                <div class="project-stack api-box">
+                  <img
+                    src="assets/icons/icons8-source-code-20.png"
+                    alt="source code icon"
+                  />
+                  <span>API</span>
+                </div>
+              </div>
+              <p class="project-description">
+                A simple weather app that display the weather condition in real
+                time of a city enter by the user. It is using the
+                <a href="https://openweathermap.org/api" target="_blank">
+                  Open Weather Map API
+                </a>
+              </p>
+            </div>
+            <div class="project-box">
+              <img
+                class="project-img"
+                src="assets/e-library-img.png"
+                alt="image demonstrating the eLibrary webpage with four books added to it"
+              />
+              <h3 class="project-title">
+                <span>eLibrary </span>
+                <span>
+                  <a
+                    class="project-demo-link"
+                    title="project live demo"
+                    href="https://lil-code30.github.io/eLibrary/"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    class="project-code-link"
+                    href="https://github.com/Lil-Code30/eLibrary"
+                    title="project code here"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M14.447 3.026a.75.75 0 0 1 .527.921l-4.5 16.5a.75.75 0 0 1-1.448-.394l4.5-16.5a.75.75 0 0 1 .921-.527ZM16.72 6.22a.75.75 0 0 1 1.06 0l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 0 1 0-1.06Zm-9.44 0a.75.75 0 0 1 0 1.06L2.56 12l4.72 4.72a.75.75 0 0 1-1.06 1.06L.97 12.53a.75.75 0 0 1 0-1.06l5.25-5.25a.75.75 0 0 1 1.06 0Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </span>
+              </h3>
+              <div class="project-stacks-container">
+                <div class="project-stack js-box">
+                  <img
+                    src="assets/icons/icons8-javascript-20.png"
+                    alt="Javascript icon"
+                  />
+                  <span>Javascript</span>
+                </div>
+                <div class="project-stack html-box">
+                  <img
+                    src="assets/icons/icons8-html-5-20.png"
+                    alt="HTML5 icon"
+                  />
+                  <span>HTML5</span>
+                </div>
+                <div class="project-stack css-box">
+                  <img src="assets/icons/icons8-css-20.png" alt="CSS icon" />
+                  <span>CSS</span>
+                </div>
+                <div class="project-stack localstorage-box">
+                  <img
+                    src="assets/icons/icons8-source-code-20.png"
+                    alt="source code icon"
+                  />
+                  <span>Local Storage</span>
+                </div>
+              </div>
+              <p class="project-description">
+                It's a Virtual Library where a user can add, delete and manage
+                virtual books. It's using LocalStorage to store the books.
+              </p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-2">
+            <div class="project-box">
+              <img
+                class="project-img"
+                src="assets/limos-website-img.png"
+                alt="limos website home images"
+              />
+              <h3 class="project-title">
+                <span>LIMOS : A car rental website </span>
+                <span>
+                  <a
+                    class="project-demo-link"
+                    title="project live demo"
+                    href="https://limos.vercel.app/"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    class="project-code-link"
+                    href="https://github.com/Lil-Code30/LIMOS-site-web_HTML-CSS"
+                    title="project code here"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M14.447 3.026a.75.75 0 0 1 .527.921l-4.5 16.5a.75.75 0 0 1-1.448-.394l4.5-16.5a.75.75 0 0 1 .921-.527ZM16.72 6.22a.75.75 0 0 1 1.06 0l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 0 1 0-1.06Zm-9.44 0a.75.75 0 0 1 0 1.06L2.56 12l4.72 4.72a.75.75 0 0 1-1.06 1.06L.97 12.53a.75.75 0 0 1 0-1.06l5.25-5.25a.75.75 0 0 1 1.06 0Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </span>
+              </h3>
+              <div class="project-stacks-container">
+                <div class="project-stack html-box">
+                  <img
+                    src="assets/icons/icons8-html-5-20.png"
+                    alt="HTML5 icon"
+                  />
+                  <span>HTML5</span>
+                </div>
+                <div class="project-stack css-box">
+                  <img src="assets/icons/icons8-css-20.png" alt="CSS icon" />
+                  <span>CSS</span>
+                </div>
+              </div>
+              <p class="project-description">
+                Limos is a car rental website where user can rent a luxury car
+                for any occasion.
+              </p>
+            </div>
+            <div class="project-box">
+              <img
+                class="project-img"
+                src="assets/todo-list-img.png"
+                alt="image of the todo list app"
+              />
+              <h3 class="project-title">
+                <span>ToDo List</span>
+                <span>
+                  <a
+                    class="project-demo-link"
+                    title="project live demo"
+                    href="https://lil-code30.github.io/To-Do_List/"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    class="project-code-link"
+                    href="https://github.com/Lil-Code30/To-Do_List"
+                    title="project code here"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M14.447 3.026a.75.75 0 0 1 .527.921l-4.5 16.5a.75.75 0 0 1-1.448-.394l4.5-16.5a.75.75 0 0 1 .921-.527ZM16.72 6.22a.75.75 0 0 1 1.06 0l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 0 1 0-1.06Zm-9.44 0a.75.75 0 0 1 0 1.06L2.56 12l4.72 4.72a.75.75 0 0 1-1.06 1.06L.97 12.53a.75.75 0 0 1 0-1.06l5.25-5.25a.75.75 0 0 1 1.06 0Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </span>
+              </h3>
+              <div class="project-stacks-container">
+                <div class="project-stack js-box">
+                  <img
+                    src="assets/icons/icons8-javascript-20.png"
+                    alt="javascript icon"
+                  />
+                  <span>Javascript</span>
+                </div>
+                <div class="project-stack html-box">
+                  <img
+                    src="assets/icons/icons8-html-5-20.png"
+                    alt="HTML 5 icon"
+                  />
+                  <span>HTML5</span>
+                </div>
+                <div class="project-stack css-box">
+                  <img src="assets/icons/icons8-css-20.png" alt="CSS icon" />
+                  <span>CSS</span>
+                </div>
+                <div class="project-stack localstorage-box">
+                  <img
+                    src="assets/icons/icons8-source-code-20.png"
+                    alt="source code icon"
+                  />
+                  <span>LocalStorage</span>
+                </div>
+              </div>
+              <p class="project-description">
+                A simple todo list app with the implementation of the CRUD
+                notion. Using localStorage to store the tasks.
+              </p>
+            </div>
+            <div class="project-box">
+              <img
+                class="project-img"
+                src="assets/tictactoe-game-img.png"
+                alt="image of the tic tac toe game demonstration and player 2 won the round"
+              />
+              <h3 class="project-title">
+                <span>Tic Tac Toe Game</span>
+                <span>
+                  <a
+                    class="project-demo-link"
+                    title="project live demo"
+                    href="https://lil-code30.github.io/Tic-Tac-Toe_Game/"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    class="project-code-link"
+                    href="https://github.com/Lil-Code30/Tic-Tac-Toe_Game"
+                    title="project code here"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M14.447 3.026a.75.75 0 0 1 .527.921l-4.5 16.5a.75.75 0 0 1-1.448-.394l4.5-16.5a.75.75 0 0 1 .921-.527ZM16.72 6.22a.75.75 0 0 1 1.06 0l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 0 1 0-1.06Zm-9.44 0a.75.75 0 0 1 0 1.06L2.56 12l4.72 4.72a.75.75 0 0 1-1.06 1.06L.97 12.53a.75.75 0 0 1 0-1.06l5.25-5.25a.75.75 0 0 1 1.06 0Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </span>
+              </h3>
+              <div class="project-stacks-container">
+                <div class="project-stack js-box">
+                  <img
+                    src="assets/icons/icons8-javascript-20.png"
+                    alt="javascript icon"
+                  />
+                  <span>Javascript</span>
+                </div>
+                <div class="project-stack html-box">
+                  <img
+                    src="assets/icons/icons8-html-5-20.png"
+                    alt="HTML 5 icon"
+                  />
+                  <span>HTML5</span>
+                </div>
+                <div class="project-stack css-box">
+                  <img src="assets/icons/icons8-css-20.png" alt="CSS icon" />
+                  <span>CSS</span>
+                </div>
+              </div>
+              <p class="project-description">A simple Tic Tac Toe Game.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="mt-5 flex flex-col items-center justify-center"
+      >
+        <h1 class="text-4xl font-extrabold">Keep In Touch</h1>
+        <p class="text-center text-lg font-medium">
+          I'm currently documenting my journey on
+          <a
+            href="https://www.youtube.com/@licode30"
+            class="underline decoration-1 px-0.5 decoration-red-600 hover:bg-red-600 hover:text-white hover:no-underline decoration-wavy"
+            target="_blank"
+          >
+            YouTube
+          </a>
+          and
+          <a
+            class="underline decoration-1 decoration-indigo-600 px-0.5 hover:bg-indigo-600 hover:text-white hover:no-underline decoration-wavy"
+            href="https://www.twitch.tv/dereal_ismael"
+            target="_blank"
+          >
+            Twitch
+          </a>
+        </p>
+        <p class="text-lg">Let's connect and share knowledge</p>
+        <div class="flex gap-2 items-center font-bold font-funnel-sans mb-3">
+          <a
+            href="https://www.twitch.tv/dereal_ismael"
+            class="border-2 rounded px-1.5 border-indigo-600 text-indigo-600 bg-indigo-100"
+            target="_blank"
+          >
+            Twitch
+          </a>
+          <a
+            href="https://www.youtube.com/@licode30"
+            class="border-2 rounded px-1.5 border-red-600 text-red-600 bg-red-100/50"
+            target="_blank"
+          >
+            YouTube
+          </a>
+          <a
+            href="https://www.linkedin.com/in/loko-ismael/"
+            class="border-2 rounded px-1.5 border-blue-700 text-blue-700 bg-blue-200"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/Lil-Code30"
+            class="border-2 rounded px-1.5 bg-black/40"
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="mailto:lokoismael9@gmail.com"
+            class="border-2 rounded px-1.5"
+            target="_blank"
+            >Gmail</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer
+      class="flex flex-col items-center justify-center font-semibold pt-2 pb-3"
+    >
+      <p class="text-lg">
+        Designed and Developed by
+        <a
+          href="https://github.com/Lil-Code30"
+          class="underline decoration-wavy hover:cursor-pointer"
+          target="_blank"
+          >Loko Ismael</a
+        >
+      </p>
+      <p class="text-gray-600">&copy; Loko Ismael 2025. All Right Reserved</p>
+    </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
